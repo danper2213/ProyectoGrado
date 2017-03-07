@@ -12,6 +12,10 @@
         <servlet-name>RegistrarTrabajoServlet</servlet-name>
         <servlet-class>controlador.RegistrarTrabajoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListarPropuestasServlet</servlet-name>
+        <servlet-class>controlador.ListarPropuestasServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegistrarPropuestaServlet</servlet-name>
         <url-pattern>/RegistrarPropuesta</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>RegistrarTrabajoServlet</servlet-name>
         <url-pattern>/RegistrarTrabajo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarPropuestasServlet</servlet-name>
+        <url-pattern>/ListarPropuestas</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

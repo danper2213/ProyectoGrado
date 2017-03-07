@@ -50,7 +50,18 @@ public class Servicios
         return  conexion.executeUpdateStatement( sql );
         
     }
+     
+    public ResultSet listarPropuestas(){
+        
+        String sql = "SELECT * FROM propuesta";
+        return conexion.executeQueryStatement(sql);
+    } 
     
+    public ResultSet listarPropuestaPorEstado(int pEstado){
+        
+        String sql = "SELECT * FROM propuesta WHERE estado =" + pEstado;
+        return conexion.executeQueryStatement(sql);
+    }
     
     
    

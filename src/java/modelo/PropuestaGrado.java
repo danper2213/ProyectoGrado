@@ -23,6 +23,9 @@ public class PropuestaGrado
     private int modalidad;
     private Date fecha_inicio;
     private Date fecha_vencimiento;
+
+    
+    private int estado;
     
     
     public PropuestaGrado( String nombre, int codigo, int programa, int semestre, String tematica, int modalidad) {
@@ -31,6 +34,7 @@ public class PropuestaGrado
         this.programa = programa;
         this.semestre = semestre;
         this.tematica = tematica;
+        this.estado = 1;
         this.modalidad = modalidad;
         this.fecha_inicio = new Date(System.currentTimeMillis());
         this.fecha_vencimiento = new Date(System.currentTimeMillis() + TimeUnit.DAYS.toMillis(365));
@@ -82,5 +86,13 @@ public class PropuestaGrado
     
     public int getSemestre() {
         return semestre;
+    }
+    
+    public int getEstado() {
+        return estado;
+    }
+
+    public void setEstado(int estado) {
+        this.estado = estado;
     }
 }

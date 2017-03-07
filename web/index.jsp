@@ -47,6 +47,8 @@
                 </div>
             </div>
             </div>
+            
+            <a href="ListarPropuestas">Generar Listado de propuestas</a>
 
         </form>
 
